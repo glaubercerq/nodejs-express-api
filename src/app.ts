@@ -1,24 +1,36 @@
-import * as http from "http";
+import express from "express";
+import cors from "cors";
+import { router } from "./routes/routes";
 
-import {
-  getListEpisodes,
-  getFilterEpisodes,
-} from "./controllers/podscasts-controller";
+const app = express();
 
-import { Routes } from "./routes/routes";
-import { HttpMethod } from "./utils/http-methods";
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
-export const app = async (
-  request: http.IncomingMessage,
-  response: http.ServerResponse
-) => {
-  const baseUrl = request.url?.split("?")[0];
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-  if (request.method === HttpMethod.GET && baseUrl === Routes.LIST) {
-    await getListEpisodes(request, response);
-  }
+app.use("/api", router);
 
-  if (request.method === HttpMethod.GET && baseUrl === Routes.ESPISODE) {
-    await getFilterEpisodes(request, response);
-  }
-};
+app.get("/", (req, res) => {
+  res.json({
+    message: "Champions League API",
+    version: "1.0.0",
+    endpoints: {
+      clubs: "/api/clubs",
+      players: "/api/players"
+    }
+  });
+});
+
+app.use("*", (req, res) => {
+  res.status(404).json({
+    success: false,
+    error: "Endpoint not found"
+  });
+});
+
+export { app };

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "Real Madrid",
+    "country": "Spain",
+    "foundedYear": 1902,
+    "stadium": "Santiago Bernabéu",
+    "capacity": 81044,
+    "coach": "Carlo Ancelotti",
+    "website": "https://www.realmadrid.com"
+  },
+  {
+    "id": "2",
+    "name": "Manchester City",
+    "country": "England",
+    "foundedYear": 1880,
+    "stadium": "Etihad Stadium",
+    "capacity": 55017,
+    "coach": "Pep Guardiola",
+    "website": "https://www.mancity.com"
+  },
+  {
+    "id": "3",
+    "name": "Bayern Munich",
+    "country": "Germany",
+    "foundedYear": 1900,
+    "stadium": "Allianz Arena",
+    "capacity": 75024,
+    "coach": "Thomas Tuchel",
+    "website": "https://fcbayern.com"
+  },
+  {
+    "id": "4",
+    "name": "Paris Saint-Germain",
+    "country": "France",
+    "foundedYear": 1970,
+    "stadium": "Parc des Princes",
+    "capacity": 47929,
+    "coach": "Luis Enrique",
+    "website": "https://www.psg.fr"
+  },
+  {
+    "id": "725784c1-7b38-4bd1-8881-f65965e1d954",
+    "name": "FC Barcelona",
+    "country": "Spain",
+    "foundedYear": 1899,
+    "stadium": "Camp Nou",
+    "capacity": 99354,
+    "coach": "Xavi Hernandez",
+    "website": "https://www.fcbarcelona.com"
+  }
+]

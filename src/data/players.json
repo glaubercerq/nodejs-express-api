@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "name": "Karim Benzema",
+    "age": 36,
+    "position": "Forward",
+    "nationality": "France",
+    "clubId": "1",
+    "shirtNumber": 9,
+    "marketValue": 25000000,
+    "height": 185,
+    "weight": 81
+  },
+  {
+    "id": "2",
+    "name": "Vinicius Jr",
+    "age": 23,
+    "position": "Winger",
+    "nationality": "Brazil",
+    "clubId": "1",
+    "shirtNumber": 7,
+    "marketValue": 120000000,
+    "height": 176,
+    "weight": 73
+  },
+  {
+    "id": "3",
+    "name": "Erling Haaland",
+    "age": 23,
+    "position": "Forward",
+    "nationality": "Norway",
+    "clubId": "2",
+    "shirtNumber": 9,
+    "marketValue": 180000000,
+    "height": 194,
+    "weight": 88
+  },
+  {
+    "id": "4",
+    "name": "Kevin De Bruyne",
+    "age": 32,
+    "position": "Midfielder",
+    "nationality": "Belgium",
+    "clubId": "2",
+    "shirtNumber": 17,
+    "marketValue": 80000000,
+    "height": 181,
+    "weight": 76
+  },
+  {
+    "id": "5",
+    "name": "Harry Kane",
+    "age": 30,
+    "position": "Forward",
+    "nationality": "England",
+    "clubId": "3",
+    "shirtNumber": 9,
+    "marketValue": 100000000,
+    "height": 188,
+    "weight": 86
+  },
+  {
+    "id": "6",
+    "name": "Kylian Mbappé",
+    "age": 25,
+    "position": "Forward",
+    "nationality": "France",
+    "clubId": "4",
+    "shirtNumber": 7,
+    "marketValue": 180000000,
+    "height": 178,
+    "weight": 73
+  }
+]

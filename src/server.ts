@@ -1,10 +1,10 @@
-import * as http from "http";
 import { app } from "./app";
 
-const server = http.createServer(app);
+const PORT = process.env.PORT || 3000;
 
-const port = process.env.PORT;
-
-server.listen(port, () => {
-  console.log(`servidor iniciado na porta ${port}`);
+app.listen(PORT, () => {
+  console.log(`🚀 Champions League API is running on port ${PORT}`);
+  console.log(`📖 API Documentation: http://localhost:${PORT}`);
+  console.log(`🏆 Clubs endpoint: http://localhost:${PORT}/api/clubs`);
+  console.log(`⚽ Players endpoint: http://localhost:${PORT}/api/players`);
 });
